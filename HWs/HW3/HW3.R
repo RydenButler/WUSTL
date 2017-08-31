@@ -41,4 +41,11 @@ Labels <- t(apply(DiffK, 1, function(x) names(sort(x, decreasing = T)[1:10])))
 
 # Question 3
 
-
+Pc <- function(Docs, k) {
+  categories <- list()
+  for(i in 1:k) {
+    categories[[i]] <- 0
+  }
+  lapply(categories, function(x) {x/nrow(Docs)}}
+PxC <- function(Docs)
+  
